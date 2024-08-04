@@ -1,0 +1,6 @@
+1. create hero section with intro and cutout for 3js component
+2. create small section under hero with buttons for 
+    - contact 
+    - github 
+    - articles 
+    - projects 
