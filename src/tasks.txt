@@ -1,0 +1,9 @@
+1. featured projects modal
+hide our by making the body overflow hidden. 
+alternatively do display none
+then comment it out 
+then design the modal under everything. I dont want to hardcode everything because that would be a waste of time so I stored all the data I want to display in any given featured projects page in an array of objects. then I pass that array of objects through my app component and into the modal component. 
+
+then I use that array of objects to create a template for the projects I will have on my featured page. 
+
+for pagination I want to set up a useState hook that looks like 
