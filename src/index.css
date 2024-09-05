@@ -52,6 +52,7 @@ body {
   flex-direction: col;
   align-items: center;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 svg {
@@ -130,7 +131,6 @@ img {
 }
 
 .project-modal-top4 {
-  border: 2px solid #182021;
   height: 90%;
   border-radius: 5px;
   display: flex;
@@ -138,30 +138,26 @@ img {
   margin-top: 3px;
 }
 
-.screenshotContainer {
-  width: 33%;
-  height: 100%;
+.project-modal-heading {
+  text-align: left;
+  margin-left: 8px;
+  font-size: 30px;
+}
+
+.tabs {
+  position: relative;
+  top: -23px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1%;
 }
 
-.descriptionContainer {
-  height: 100%;
-  width: 70%;
-  display: flex;
-  flex-direction: row;
-  height: 80px;
-  justify-content: space-between;
-}
-
-.topHalf {
-  width: 50%;
-}
-
-.title {
-  background-color: #101213;
-}
-
-.title > p {
-  width: 200px;
+.tabBox {
+  border: 2px solid #182021;
+  background-color: #141617; /*change to somethingdarker on click and hover */
+  padding: 2px 4px;
+  font-size: 1rem;
+  width: 2rem;
 }

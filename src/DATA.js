@@ -1,6 +1,6 @@
 const featuredProjectsArray = [
   {
-    id: "featured-01",
+    id: "1",
     name: "Pixcel OCR",
     screencap: "someurl",
     techs: "somearrayofimages",
@@ -9,7 +9,7 @@ const featuredProjectsArray = [
     customlink: "someurl",
   },
   {
-    id: "featured-02",
+    id: "2",
     name: "llama chess",
     screencap: "someurl",
     techs: "somearrayofimages",
@@ -18,7 +18,7 @@ const featuredProjectsArray = [
     customlink: "someurl",
   },
   {
-    id: "featured-03",
+    id: "3",
     name: "Superbin",
     screencap: "someurl",
     techs: "somearrayofimages",

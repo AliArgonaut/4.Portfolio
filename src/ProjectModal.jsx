@@ -1,10 +1,9 @@
 import { useState } from "react";
 
 export function ProjectModal({ featuredProjectsArray, toggle, toggleModal }) {
-  const [displayedProject, setDisplayedProject] = useState(0);
+  const [currentTab, setCurrentTab] = useState(0)
 
-  console.log(featuredProjectsArray[1].name);
-
+  console.log(currentTab.name);
 
   return (
     <>
@@ -14,16 +13,23 @@ export function ProjectModal({ featuredProjectsArray, toggle, toggleModal }) {
       <div className="modal-box">
         <div className="project-modal-heading">@featuredprojects</div>
         <div className="project-modal-top4">
-          <div className="screenshotContainer">
-            <div className="imagePart">image</div>
+            <div className="pic"></div>
+            <div className="text"></div>
           </div>
-          <div className="descriptionContainer">
-            <div className="topHalf">tech</div>
-            <div className="title"><p>name</p></div>
+          <div className="tabs">
+            {featuredProjectsArray.map((e) => {
+              return (
+                <div onClick={() => { setCurrentTab(e) }}
+                  className="tabBox"
+                  key={e.id}>{e.id}
+                </div>  
+              )
+            })}
           </div>
         </div>
-      </div></div>
-
+      </div>
     </>
   );
+
 }
+
