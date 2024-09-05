@@ -143,7 +143,7 @@ img {
 .project-modal-heading {
   text-align: left;
   margin-left: 8px;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .tabs {
@@ -169,14 +169,52 @@ img {
   text-align: left;
   width: 64%;
   height: 70%;
-  line-height: 1.8rem;
-  border: 2px solid blue;
+  line-height: 2.5rem;
   display: flex;
   align-items: center;
   padding: 10px 15px;
+  border-left: 2px solid #182021;
+  font-style: italic;
 }
 .pic {
-  border: 2px solid blue;
   width: 33%;
   height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.stockimage {
+  width: 90%;
+  height: 100%;
+}
+
+.names {
+  position: relative;
+  top: -450px;
+  right: -441px;
+  font-size: 50px;
+  width: 60%;
+  text-align: right;
+}
+
+.tech {
+  position: relative;
+  top: -500px;
+  right: -500px;
+  border: 2px solid blue;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.more {
+  position: relative;
+  top: -170px;
+  right: -900px;
+  color: lightslategray;
+  width: 24%;
+  font-size: 1rem;
 }
