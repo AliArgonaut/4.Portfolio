@@ -1,10 +1,10 @@
-export function Hero({ toggleModal }) {
+export function Hero(props) {
   return (
     <>
       <div id="hero-box">
         <div id="darker-bg-text-box">@lloydbonds</div>
         <div id="details">
-          <div onClick={toggleModal} className="item-container">
+          <div onClick={props.toggleModal} className="item-container">
             <div className="svg-container">
               <svg
                 viewBox="0 0 20 20"
@@ -91,7 +91,9 @@ export function Hero({ toggleModal }) {
             <div className="svg-container">
               <img src="../src/assets/employment.png" alt="" />
             </div>
-            <div className="svg-container-title">résumé</div>
+            <div onClick={props.toggleResume} className="svg-container-title">
+              about
+            </div>
           </div>
           <div className="item-container">
             <div className="svg-container">

@@ -11,7 +11,8 @@ export function ProjectModal({ featuredProjectsArray, toggle, toggleModal }) {
         <div className="modal-viewport" onClick={toggleModal}></div>
 
         <div className="modal-box">
-          <div className="project-modal-heading">{`@featured-project-${currentTab.id}`}</div>
+          {/*    <div className="project-modal-heading">{`@featured-project-${currentTab.id}`}</div>
+           */}{" "}
           <div className="project-modal-top4">
             <div className="pic">
               <img className="stockimage" src={currentTab.screencap} alt="" />

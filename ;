@@ -261,8 +261,4 @@ a {
   padding: 10px 15px;
   color: white;
   line-height: 2rem;
-  font-style: italic;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
