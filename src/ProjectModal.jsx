@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export function ProjectModal({ featuredProjectsArray }) {
+export function ProjectModal({ featuredProjectsArray, toggle, toggleModal }) {
   const [displayedProject, setDisplayedProject] = useState(0);
 
   console.log(featuredProjectsArray[1].name);
@@ -8,8 +8,8 @@ export function ProjectModal({ featuredProjectsArray }) {
 
   return (
     <>
-      <div className="modal-viewport">
-      </div>
+      <div className={toggle ? "hello": "modalToggledOff" }>
+        <div className="modal-viewport" onClick={toggleModal}></div>
 
       <div className="modal-box">
         <div className="project-modal-heading">@featuredprojects</div>
@@ -22,7 +22,8 @@ export function ProjectModal({ featuredProjectsArray }) {
             <div className="title"><p>name</p></div>
           </div>
         </div>
-      </div>
+      </div></div>
+
     </>
   );
 }

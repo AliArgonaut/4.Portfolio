@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { GameSettings } from "./GameSettings";
 import { ProjectModal } from "./ProjectModal";
 import { Hero } from "./Hero";
@@ -5,13 +6,19 @@ import featuredProjectsArray from './DATA'
 
 export default function App() {
 
+  const [toggle, setToggle] = useState(false)
+
+  function toggleModal() {
+    setToggle(!toggle)
+  }
+
   return (
     <>
       <div id="flex-row-cntr-box">
-        <Hero />
+        <Hero toggleModal={toggleModal} />
       </div>
       <GameSettings />
-      <ProjectModal featuredProjectsArray={featuredProjectsArray} />
+      <ProjectModal toggleModal={toggleModal} toggle={toggle} featuredProjectsArray={featuredProjectsArray} />
     </>
   );
 }
