@@ -2,7 +2,7 @@ const featuredProjectsArray = [
   {
     id: "1",
     name: "Pixcel OCR",
-    screencap: "../src/assets/stock.jpg",
+    screencap: "../src/assets/pixcel.PNG",
     techs: [
       "../src/assets/react.png",
       "../src/assets/openai.png",
@@ -28,10 +28,10 @@ const featuredProjectsArray = [
   },
   {
     id: "3",
-    name: "Superbin",
-    screencap: "../src/assets/stock.jpg",
+    name: "BinByte Clipboard",
+    screencap: "../src/assets/binbyte.png",
     techs: ["../src/assets/react.png", "../src/assets/javascript.png"],
-    body: "Superbin is a Chrome extension I made to help with source management when researching. It, in essence, expands your clipboard and gives it more functionality. You can now copy multiple things at once, and the app will store not only the thing you copied, but the source URL. You can then export the contents of this clipboard to a Google Doc.",
+    body: "BinByte is a Chrome extension I made to help with source management when researching. It, in essence, expands your clipboard and gives it more functionality. You can now copy multiple things at once, and the app will store not only the thing you copied, but the source URL. You can then export the contents of this clipboard to a Google Doc.",
     more: "view code (and more) on my GitHub!",
     customlink: "someurl",
   },

@@ -162,6 +162,12 @@ img {
   padding: 2px 4px;
   font-size: 1rem;
   width: 2rem;
+  transition: 0.3s;
+}
+
+.tabBox:hover {
+  background-color: white;
+  color: #141617;
 }
 .text {
   font-size: 1.5rem;
@@ -177,12 +183,11 @@ img {
   font-style: italic;
 }
 .pic {
-  width: 33%;
+  width: auto;
   height: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 
 .stockimage {
@@ -227,4 +232,9 @@ img {
 .box:nth-child(1) {
   width: 50px;
   height: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
