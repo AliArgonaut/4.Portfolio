@@ -1,3 +1,3 @@
 export function Boids() {
-  return <>hello</>;
+  return <></>;
 }

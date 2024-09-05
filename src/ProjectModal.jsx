@@ -3,8 +3,6 @@ import { useState } from "react";
 export function ProjectModal({ featuredProjectsArray, toggle, toggleModal }) {
   const [currentTab, setCurrentTab] = useState(featuredProjectsArray[0]);
 
-  console.log(currentTab.name);
-
   return (
     <>
       <div className={toggle ? "hello" : "modalToggledOff"}>
