@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export function ProjectModal({ featuredProjectsArray, toggle, toggleModal }) {
-  const [currentTab, setCurrentTab] = useState(0)
+  const [currentTab, setCurrentTab] = useState(featuredProjectsArray[0])
 
   console.log(currentTab.name);
 
@@ -14,7 +14,7 @@ export function ProjectModal({ featuredProjectsArray, toggle, toggleModal }) {
         <div className="project-modal-heading">@featuredprojects</div>
         <div className="project-modal-top4">
             <div className="pic"></div>
-            <div className="text"></div>
+            <p className="text">{currentTab.body}</p>
           </div>
           <div className="tabs">
             {featuredProjectsArray.map((e) => {
