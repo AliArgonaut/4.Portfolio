@@ -34,7 +34,11 @@ export function ProjectModal({ featuredProjectsArray, toggle, toggleModal }) {
             })}
           </div>
           <div className="names">{currentTab.name}</div>
-          <div className="tech"></div>
+          <div className="tech">
+            {currentTab.techs.map((tech, index) => (
+              <img key={`key${index}`} src={tech} className="box"></img>
+            ))}
+          </div>
           <div className="more">{currentTab.more}</div>
         </div>
       </div>
