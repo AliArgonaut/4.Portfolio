@@ -34,7 +34,7 @@ export function ProjectModal({ featuredProjectsArray, toggle, toggleModal }) {
             })}
           </div>
           <div className="names">{currentTab.name}</div>
-          <div className="tech">tech icons</div>
+          <div className="tech"></div>
           <div className="more">{currentTab.more}</div>
         </div>
       </div>
