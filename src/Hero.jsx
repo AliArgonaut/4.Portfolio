@@ -91,7 +91,7 @@ export function Hero(props) {
             <div className="svg-container">
               <img src="../src/assets/employment.png" alt="" />
             </div>
-            <div onClick={props.toggleResume} className="svg-container-title">
+            <div onClick={props.toggleAboutModal} className="svg-container-title">
               about
             </div>
           </div>

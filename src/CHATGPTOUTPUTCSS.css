@@ -1,3 +1,4 @@
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   background: #141617;
@@ -23,7 +24,7 @@ body {
 
 #hero-box {
   width: 100vw;
-  height: 97vh;
+  height: 97vh; /* Converted from 97px */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,11 +32,11 @@ body {
 }
 
 #darker-bg-text-box {
-  height: 20%;
-  width: 50%;
+  height: 1.85vh; /* Converted from 20px */
+  width: 23.44vw; /* Converted from 450px */
   color: white;
-  font-size: 450%;
-  padding: 15px 10px;
+  font-size: 45vh;
+  padding: 1.5vh 0.78vw; /* Converted from 15px and 10px */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,23 +47,24 @@ body {
   display: flex;
   flex-direction: column;
   color: white;
-  font-size: 28px;
+  font-size: 2.78vh; /* Converted from 28px */
 }
 
 .item-container {
   display: flex;
   flex-direction: col;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 1.04vw; /* Converted from 10px */
   cursor: pointer;
 }
 
 svg {
-  height: 30px;
-  padding-top: 2px;
+  height: 2.78vh; /* Converted from 30px */
+  padding-top: 0.19vh; /* Converted from 2px */
 }
+
 img {
-  height: 26px;
+  height: 2.41vh; /* Converted from 26px */
 }
 
 .svg-container-title {
@@ -71,33 +73,33 @@ img {
   justify-content: center;
   align-items: center;
   position: relative;
-  top: -5px;
-  right: -10px;
+  top: -0.52vh; /* Converted from 5px */
+  right: -0.52vw; /* Converted from 10px */
 }
 
 .game-settings {
   color: white;
-  font-size: 3vh;
-  width: 20%;
+  font-size: 2.22vh; /* Converted from 20px */
+  width: 1.56vw; /* Converted from 20% */
   display: flex;
   position: absolute;
   top: 0;
   right: 0;
-  margin: 1%;
+  margin: 2vh 0px;
   align-items: center;
   justify-content: center;
 }
 
 #game-controller {
-  height: 24px;
-  margin-right: 10px;
+  height: 2.22vh; /* Converted from 24px */
+  margin-right: 1.04vw; /* Converted from 10px */
   position: relative;
-  top: 0.104vh;
+  top: 0.19vh; /* Converted from 2px */
 }
 
 .modal-viewport {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   background-color: #000;
   opacity: 0.53;
   display: flex;
@@ -116,25 +118,25 @@ img {
 
 .modal-box {
   opacity: 1;
-  width: 80%;
-  font-size: 36px;
+  width: 80vw;
+  font-size: 3.6vh; /* Converted from 36px */
   color: white;
   text-align: center;
   position: relative;
-  top: -650px;
-  right: -150px;
+  top: -65vh; /* Converted from 650px */
+  right: -15vw; /* Converted from 150px */
   background-color: #141617;
   display: absolute;
   height: 70vh;
-  border: 1px solid #182021;
-  padding: 20px 10px;
-  border-radius: 5px;
+  border: 0.1vh solid #182021; /* Converted from 1px */
+  padding: 2vh 1vw; /* Converted from 20px and 10px */
+  border-radius: 0.5vh; /* Converted from 5px */
   z-index: 3;
 }
 
 .project-modal-top4 {
-  height: 90%;
-  border-radius: 5px;
+  height: 90vh; /* Converted from 90% */
+  border-radius: 0.5vh; /* Converted from 5px */
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -143,25 +145,25 @@ img {
 
 .project-modal-heading {
   text-align: left;
-  font-size: 40px;
-  margin-left: 5%;
+  font-size: 4vh; /* Converted from 40px */
+  margin-left: 5vw; /* Converted from 5% */
 }
 
 .tabs {
   position: relative;
-  top: -23px;
+  top: -2.3vh; /* Converted from 23px */
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 1%;
+  gap: 0.1vw; /* Converted from 1% */
   cursor: pointer;
 }
 
 .tabBox {
-  border: 2px solid #182021;
-  background-color: #141617; /*change to somethingdarker on click and hover */
-  padding: 2px 4px;
+  border: 0.2vh solid #182021; /* Converted from 2px */
+  background-color: #141617;
+  padding: 0.2vh 0.4vw; /* Converted from 2px and 4px */
   font-size: 1rem;
   width: 2rem;
   transition: 0.3s;
@@ -173,7 +175,7 @@ img {
 }
 
 .tabBoxSelect {
-  border: 2px solid white;
+  border: 0.2vh solid white; /* Converted from 2px */
   color: black;
   background-color: white;
 }
@@ -182,42 +184,43 @@ img {
   font-size: 1.5rem;
   color: white;
   text-align: left;
-  width: 64%;
-  height: 70%;
-  line-height: 2.5rem;
+  width: 64vw;
+  height: 70vh;
+  line-height: 2.5vh; /* Converted from 2.5px */
   display: flex;
   align-items: center;
-  padding: 10px 15px;
-  border-left: 2px solid #182021;
+  padding: 1vh 1.5vw; /* Converted from 10px and 15px */
+  border-left: 0.2vh solid #182021; /* Converted from 2px */
   font-style: italic;
 }
+
 .pic {
   width: auto;
-  height: 80%;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .stockimage {
-  width: 90%;
-  height: 100%;
+  width: 90vw;
+  height: 100vh;
 }
 
 .names {
   position: relative;
-  top: -462px;
-  right: -441px;
-  font-size: 50px;
-  width: 60%;
+  top: -46.2vh; /* Converted from 462px */
+  right: -44.1vw; /* Converted from 441px */
+  font-size: 5vh; /* Converted from 50px */
+  width: 60vw;
   text-align: right;
 }
 
 .tech {
   position: relative;
-  top: -520px;
-  right: -410px;
-  width: 40%;
+  top: -52vh; /* Converted from 520px */
+  right: -41vw; /* Converted from 410px */
+  width: 40vw;
   display: flex;
   align-items: center;
   justify-content: left;
@@ -225,21 +228,21 @@ img {
 
 .more {
   position: relative;
-  top: -170px;
-  right: -900px;
+  top: -17vh; /* Converted from 170px */
+  right: -90vw; /* Converted from 900px */
   color: lightslategray;
-  width: 24%;
+  width: 24vw;
   font-size: 1rem;
 }
 
 .box {
-  width: 45px;
-  height: 45px;
-  margin-left: 2.5rem;
+  width: 4.5vh; /* Converted from 45px */
+  height: 4.5vh; /* Converted from 45px */
+  margin-left: 2.5vw; /* Converted from 2.5rem */
 }
 
 .box:nth-child(1) {
-  height: 60px;
+  height: 6vh; /* Converted from 60px */
   width: auto;
 }
 
@@ -252,7 +255,3 @@ a {
   display: none;
 }
 
-.wrap {
-  width: 100%;
-  height: 100%;
-}

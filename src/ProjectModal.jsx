@@ -24,7 +24,9 @@ export function ProjectModal({ featuredProjectsArray, toggle, toggleModal }) {
                   onClick={() => {
                     setCurrentTab(e);
                   }}
-                  className="tabBox"
+                  className={`tabBox ${
+                    currentTab.id == e.id ? "tabBoxSelect" : ""
+                  }`}
                   key={e.id}
                 >
                   {e.id}

@@ -2,25 +2,29 @@ import { useState } from "react";
 import { GameSettings } from "./GameSettings";
 import { ProjectModal } from "./ProjectModal";
 import { Hero } from "./Hero";
-import { Resume } from "./Resume";
+import { About } from "./About";
 import featuredProjectsArray from "./DATA";
+import aboutMeData from "./AboutMeData.js"
 
 export default function App() {
   const [toggle, setToggle] = useState(false);
-  const [resumeToggle, setResumeToggle] = useState(false);
+  const [isToggle, setIsToggle] = useState(false)
 
   function toggleModal() {
     setToggle(!toggle);
   }
 
-  function toggleResume() {
-    setResumeToggle(!resumeToggle);
+  function toggleAboutModal() {
+    setIsToggle(!isToggle)
   }
+
+
 
   return (
     <>
+    <div className="wrap">
       <div id="flex-row-cntr-box">
-        <Hero toggleModal={toggleModal} toggleResume={toggleResume} />
+        <Hero toggleModal={toggleModal} toggleAboutModal={toggleAboutModal} />
       </div>
       <GameSettings />
       <ProjectModal
@@ -29,7 +33,8 @@ export default function App() {
         featuredProjectsArray={featuredProjectsArray}
       />
 
-      <Resume toggleResume={toggleResume} resumeToggle={resumeToggle} />
+      <About toggleAboutModal = {toggleAboutModal} isToggle={isToggle} aboutMeData={aboutMeData} />
+    </div>
     </>
   );
 }
